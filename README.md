@@ -11,6 +11,9 @@ fsed.sh
 fsed - applies "sed" to a list of files. Can recurse on folders and dry-run.
 USAGE: fsed <usual-sed-options> [-r|--recursive|-d|--dry-run] [files]
 
-count_down.sh
+timer.sh
 -------------
-count_down - block the command prompt for 'n' seconds, echo the progress to console with '\r' instead of '\n' - console is not scrolled
+timer - block the command prompt for 'n' seconds, echo the progress to console with '\r' instead of '\n' - console is not scrolled
+
+function timer() { let n=$1; let counter=0; while [ $counter -lt $n ]; do echo -ne "$counter\r"; sleep 1; let counter+=1; done; }
+
