@@ -7,10 +7,7 @@ DESCRIPTION:
   echo_red/echo_blue/echo_green/echo_bold - a nice and straightforward enhancement to the old good "echo"
 
 USAGE:
-  echo_red [usual-echo-options]
-  echo_blue [usual-echo-options]
-  echo_green [usual-echo-options]
-  ...
+  echo_whatever [usual-echo-options]
 
 fsed.sh
 -------
