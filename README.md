@@ -11,7 +11,7 @@ fsed.sh
 -------
 fsed - applies "sed" to a list of files. Can recurse on folders and dry-run.
 
-USAGE: fsed \<usual-sed-options\> [-r|--recursive|-d|--dry-run] [files]
+USAGE: fsed [--dry|-d] \<normal-sed-pattern\> [file-list]
 
 timer.sh
 -------------
