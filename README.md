@@ -14,6 +14,6 @@ USAGE: fsed <usual-sed-options> [-r|--recursive|-d|--dry-run] [files]
 timer.sh
 -------------
 timer - block the command prompt for 'n' seconds, echo the progress to console with '\r' instead of '\n' - console is not scrolled
+USAGE: timer <seconds>
 
-function timer() { let n=$1; let counter=0; while [ $counter -lt $n ]; do echo -ne "$counter\r"; sleep 1; let counter+=1; done; }
 
