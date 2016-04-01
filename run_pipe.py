@@ -38,7 +38,7 @@ def kill_with_grace(proc, grace):
             time.sleep(1)
             grace -= 1
 
- None:
+        if proc.poll() == None:
             print "PID", proc.pid, "is <defunct> !!!"
         else:
             print "PID", proc.pid, "exit code", proc.poll()
