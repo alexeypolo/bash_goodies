@@ -7,6 +7,12 @@ echo_red/echo_blue/echo_green/echo_bold - a nice and straightforward enhancement
 
 USAGE: echo_whatever [usual-echo-options]
 
+find_with_grep.sh
+-----------------
+ff - run standard 'find' and filter results through 'grep'.
+
+USAGE: ff [-d directory] \<grep-pattern\>
+
 fsed.sh
 -------
 fsed - applies "sed" to a list of files. Can recurse on folders and dry-run.
