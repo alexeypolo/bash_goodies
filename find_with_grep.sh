@@ -19,7 +19,7 @@ function ff() {
     [[ "$1" == "-d" ]] && dir="$2" && shift 2;
 
     pattern="$*";
-    [[ ! -d "$dir" ]] && echo "Usage: ff <directory <grep pattern>" && return 1;
-    [[ "$pattern" == "" ]] && echo "Usage: ff <directory <grep pattern>" && return 1;
+    [[ ! -d "$dir" ]] && echo "$ff_usage" && return 1;
+    [[ "$pattern" == "" ]] && echo "$ff_usage" && return 1;
     find "$dir" | grep $pattern;
 }
