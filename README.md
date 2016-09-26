@@ -5,7 +5,7 @@ echo_colors.sh
 --------------
 echo_red/echo_blue/echo_green/echo_bold - a nice and straightforward enhancement to the old good "echo"
 
-USAGE: echo_whatever [usual-echo-options]
+USAGE: echo_<color> [usual-echo-options]
 
 find_with_grep.sh
 -----------------
