@@ -14,12 +14,12 @@
 function ff() {
     ff_usage="USAGE: ff [-d directory] <grep-pattern>"
 
-    # search directory is either "." (default) or "-d <dir"
+    # search directory is either "." (default) or "-d <dir>"
     dir="."
     [[ "$1" == "-d" ]] && dir="$2" && shift 2;
 
-    pattern="$*";
-    [[ ! -d "$dir" ]] && echo "$ff_usage" && return 1;
+    pattern="$*";    
+    [[ ! -d "$dir" ]] && echo "Directory $dir does not exist" && return 1;    
     [[ "$pattern" == "" ]] && echo "$ff_usage" && return 1;
     find "$dir" | grep $pattern;
 }
