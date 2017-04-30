@@ -8,3 +8,5 @@ alias gdbrun="gdb -ex=r --args"
 #        tool = gvimdiff
 alias gdiff='git difftool --no-prompt --tool=gvimdiff'
 
+# grep in C/C++ sources and headers
+alias grepc++='grep --include=\*.h\* --include=\*.c\*'
