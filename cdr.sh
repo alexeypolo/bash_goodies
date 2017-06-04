@@ -1,6 +1,6 @@
 # source me in .bashrc or .profile
-# Change from subfolder to a root folder of a Git or SVN repo
 
+# Change from subfolder to a root folder of a Git or SVN repo
 function cdr() {
     d=$PWD
 
