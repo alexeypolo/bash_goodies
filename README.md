@@ -23,6 +23,11 @@ fsed - applies "sed" to a list of files. Can recurse on folders and dry-run.
 
 USAGE: fsed [--dry|-d] \<normal-sed-pattern\> [file-list]
 
+retag.sh
+--------
+Build tags for C/C++ code, exclude JS and JSON.
+Create a VIM syntax file that can be used to highlight the tags.
+
 timer.sh
 -------------
 timer - block the command prompt for 'n' seconds, echo the progress to console with '\r' instead of '\n' - console is not scrolled.
