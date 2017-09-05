@@ -26,7 +26,8 @@ USAGE: fsed [--dry|-d] \<normal-sed-pattern\> [file-list]
 retag.sh
 --------
 Build tags for C/C++ code, exclude JS and JSON.
-Create a VIM types file that can be used to highlight the tags.
+Create a VIM types file that can be used to highlight the tags. See comments
+inside for how to edit .vimrc to enable that.
 
 timer.sh
 -------------
