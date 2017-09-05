@@ -21,4 +21,4 @@ $CTAGS_EXE --exclude="*.js*" -R $DIRS
 #       autocmd BufRead,BufNewFile *.h :so types.vim
 #       autocmd BufRead,BufNewFile *.c :so types.vim
 #   endif
-($CTAGS_EXE --exclude='*json' --c++-kinds=cgnstu -o- -R $DIRS) | awk '{printf("syntax keyword cDefine\t%s\n", $1)}' > types.vim
+($CTAGS_EXE --exclude='*json' --c++-kinds=cgnstu -o- -R $DIRS) | awk '{printf("syntax keyword cType\t%s\n", $1)}' > types.vim
