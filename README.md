@@ -1,6 +1,10 @@
 # bash_goodies
 Useful bash scripts.
 
+cdr.sh
+--------
+Change from subfolder to a root folder of a Git or SVN repo
+
 echo_colors.sh
 --------------
 echo_red/echo_blue/echo_green/echo_bold - a nice and straightforward enhancement to the old good "echo"
