@@ -6,7 +6,8 @@ alias gdbrun="gdb -ex=r --args"
 # Git diff with a graphical tool of your choice. Alternatively, we could get away with adding few lines to ~/.gitconfig :
 # [diff]
 #        tool = gvimdiff
-alias gdiff='git difftool --no-prompt --tool=gvimdiff'
+alias gdiffx='git difftool --no-prompt --tool=gvimdiff'
+alias gdiff='git difftool --no-prompt --tool=vimdiff'
 
 alias grep='grep --color=auto'
 
