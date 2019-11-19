@@ -24,6 +24,9 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+" Make the text-mode vim mouse-aware (on gVim this is set by default)
+set mouse=a
+
 " List buffers
 noremap <F6> :ls<CR>:b
 
