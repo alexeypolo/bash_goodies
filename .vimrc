@@ -1,3 +1,6 @@
+" Enable textmode Vim to go beyond the default 16 system colors
+set t_Co=256
+
 set history=100
 syntax on
 
