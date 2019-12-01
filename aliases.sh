@@ -11,5 +11,8 @@ alias gdiff='git difftool --no-prompt --tool=vimdiff'
 
 alias grep='grep --color=auto'
 
+# Tell 'less' to interpret color codes and other escape sequences
+alias less='less -r'
+
 # grep in C/C++ sources and headers
 alias grepc++='grep -nI --include=\*.c\* --include=\*.h\* --exclude=\*.htm*'
