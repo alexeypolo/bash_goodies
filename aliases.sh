@@ -9,7 +9,8 @@ alias gdbrun="gdb -ex=r --args"
 alias gdiffx='git difftool --no-prompt --tool=gvimdiff'
 alias gdiff='git difftool --no-prompt --tool=vimdiff'
 
-alias grep='grep --color=auto'
+# grep does not consider Python *.pyc to be a binary file, have to exclude explicitly
+alias grep="grep --color=auto --exclude '*.pyc'"
 
 # Tell 'less' to interpret color codes and other escape sequences
 alias less='less -r'
