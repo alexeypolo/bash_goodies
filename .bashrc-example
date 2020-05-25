@@ -1,0 +1,24 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+export CXXFLAGS='-fdiagnostics-color -fmax-errors=3'
+export CTAGS_EXE=/common/pkgs/ctags/2017-07-05.0645b2c8/bin/ctags
+alias ctags=$CTAGS_EXE
+alias g=gvim
+alias gdb=/common/pkgs/gdb/7.12/bin/gdb
+alias python=/common/pkgs/python/3.6.10/bin/python3.6
+alias python3=/common/pkgs/python/3.6.10/bin/python3.6
+alias svndiff="svn diff --internal-diff"
+alias make-list="make -pRrq | grep -o -P '^test-.*?:'"
+alias rp="realpath ."
+alias xx='xeyes -center green -geometry 500x500'
+source ~/bash_goodies/aliases.sh
+source ~/bash_goodies/fsed.sh
+source ~/bash_goodies/cdr.sh
+source ~/bash_goodies/git_ps1.sh
+source ~/bash_goodies/bashrc_ps1.sh
