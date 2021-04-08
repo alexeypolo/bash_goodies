@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+[[ "$1" == "" || $2 != "" ]] && echo "USAGE: $(basename $0) [user]@hostname" && exit 0
+
+# drop the optional 'user@' prefix
+h=$(echo $1 | sed 's/^.*@//g')
+
+ssh-keygen -R $h && ssh-copy-id $1
