@@ -29,6 +29,12 @@ Build tags for C/C++ code, exclude JS and JSON.
 Create a VIM types file that can be used to highlight the tags. See comments
 inside for how to edit .vimrc to enable that.
 
+set_title.sh
+------------
+Set terminal's title
+
+USAGE: set_title "my title"
+
 timer.sh
 -------------
 timer - block the command prompt for 'n' seconds, echo the progress to console with '\r' instead of '\n' - console is not scrolled.
